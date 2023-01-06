@@ -52,3 +52,21 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Test cases
+
+## Submit Button component test casesVerify if the label is submit
+
+1. Verify if the submit button color is grey initially(Pending state)
+2. Verify if the submit button is clickable
+3. Verify whether the submit function is called when clicked
+4. Verify if the error state is shown
+5. Verify if the success state is shown
+6. Verify if the validating state is shown
+
+## Text field component test cases
+
+1. Verify the email input type
+2. Verify the password input type
+3. Verify if the email value can be entered
+4. Verify if the password value can be entered
