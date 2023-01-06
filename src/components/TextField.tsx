@@ -22,11 +22,14 @@ const TextField: React.FC<ITextFieldProps> = ({
   isPassword,
 }) => {
   const type = isPassword ? "password" : "text";
+  const id = isPassword ? "passwordField" : "emailField";
   return (
     <TextFieldContainer>
       <label>{label}</label>
       <input
         type={type}
+        id={id}
+        data-testid={type}
         value={value}
         onChange={(evt) => onChange(evt.target.value)}
       />
@@ -35,4 +38,3 @@ const TextField: React.FC<ITextFieldProps> = ({
 };
 
 export default TextField;
-

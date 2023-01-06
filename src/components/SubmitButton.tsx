@@ -1,4 +1,4 @@
-import React, { FormEventHandler } from "react";
+import React from "react";
 import styled from "styled-components";
 import { FormStatus } from "../types/form";
 
@@ -30,6 +30,8 @@ const SubmitButton: React.FC<ISubmitButton> = ({ label, onClick, status }) => {
   return (
     <SubBtn
       type="submit"
+      id="loginBtn"
+      data-testid="submit"
       onClick={onSubButClick}
       theme={{ color: buttonBackgroundMap[status] }}
     >
@@ -39,4 +41,3 @@ const SubmitButton: React.FC<ISubmitButton> = ({ label, onClick, status }) => {
 };
 
 export default SubmitButton;
-
