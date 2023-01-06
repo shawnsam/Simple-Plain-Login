@@ -6,8 +6,8 @@ const SuccessPage = () => {
 
   return (
     <div>
-      <p>Successfully Logged in !</p>
-      <button onClick={() => navigate("/")}> logout </button>
+      <p id="successMsg">Successfully Logged in !</p>
+      <button onClick={() => navigate("/")} id="logoutBtn" data-testid="logoutBtn"> logout </button>
     </div>
   );
 };
